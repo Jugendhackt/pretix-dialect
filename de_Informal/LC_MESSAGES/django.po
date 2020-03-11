@@ -4385,7 +4385,7 @@ msgstr ""
 "{url}\n"
 "\n"
 "Viele Grüße,\n"
-"Das {event} Team\n"
+"Das {event} Team"
 
 #: pretix/base/settings.py:417
 #, python-brace-format
