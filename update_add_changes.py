@@ -32,7 +32,8 @@ if __name__ == "__main__":
             new_jh_entry = new_jh_po.find(row["msgid"],msgctxt=row["context"] if row["context"] else False)
             if not new_jh_entry:
                 print("Could not find translation in new files")
-            new_jh_entry.msgstr = row["jh_new"]
+            new_text = row["jh_new"] if row["jh_new"] else row["pretix_old"]
+            new_jh_entry.msgstr = new_text
         new_jh_po.metadata['Language-Team'] = "Jugend hackt Team based on " + new_jh_po.metadata['Language-Team']
         new_jh_po.metadata["Last-Translator"] = "Jugend hackt Team"
         new_jh_po.save(sys.argv[5])
