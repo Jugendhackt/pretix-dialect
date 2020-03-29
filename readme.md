@@ -28,4 +28,7 @@ Diese Repository muss in dem Pfad zu finden sein.
 Sprachen in diesem Pfad werden den internen bevorzugt.
 
 
-Die .po Dateien sind mit msgfmt in .mo Dateien zu übersetzen.
+Die .po Dateien sind mit msgfmt in .mo Dateien zu übersetzen:
+```
+make
+```
